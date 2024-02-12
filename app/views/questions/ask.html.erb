@@ -1,0 +1,8 @@
+<!-- app/views/questions/ask.html.erb -->
+<h1>Ask your coach anything</h1>
+
+<%= form_with(url: '/answer', method: :get) do |form| %>
+  <%= form.label :question, 'Your question:' %>
+  <%= form.text_field :question %>
+  <%= form.submit 'Ask!' %>
+<% end %>
